@@ -1,6 +1,14 @@
 ---
 name: regression-testing
-description: Architect and maintain a committed end-to-end regression suite that gates merges, so changing a shared seam can't silently break existing behavior. Owns the how of testing — a single runnable pass/fail command, deterministic seed/teardown fixtures, and an explicit per-project invariant catalog. Agnostic and self-contained: it depends on no other skill and plugs into any codebase; integration with a merge gate or a delivery pipeline is expressed as a functional contract, not a named dependency. Use when setting up testing on a project, adding or updating e2e specs, defining invariants, or when a change touches an auth/tenancy/routing/data-resolution seam and dependent behavior must be re-verified.
+description: >-
+  Architect and maintain a committed end-to-end regression suite that gates merges, so changing a
+  shared seam can't silently break existing behavior. Owns the how of testing — a single runnable
+  pass/fail command, deterministic seed/teardown fixtures, and an explicit per-project invariant
+  catalog. Agnostic and self-contained: it depends on no other skill and plugs into any codebase;
+  integration with a merge gate or a delivery pipeline is expressed as a functional contract, not a
+  named dependency. Use when setting up testing on a project, adding or updating e2e specs, defining
+  invariants, or when a change touches an auth/tenancy/routing/data-resolution seam and dependent
+  behavior must be re-verified.
 metadata:
   author: julian
   version: "0.1.0"
